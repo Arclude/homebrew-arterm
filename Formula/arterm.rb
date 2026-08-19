@@ -1,13 +1,13 @@
 class Arterm < Formula
   desc "AI coding agent powered by Claude and ChatGPT"
   homepage "https://github.com/Arclude/Arterm-CLI"
-  version "0.10.7"
+  version "0.10.8"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/Arclude/Arterm-CLI/releases/download/v0.10.7/arterm-macos-aarch64.tar.gz"
-      sha256 "43d3f03abe938d21149d967e6bbcf789a4511365cea773a3f3e64dc23d22f9e0"
+      url "https://github.com/Arclude/Arterm-CLI/releases/download/v0.10.8/arterm-macos-aarch64.tar.gz"
+      sha256 "45bda256cbab10e0cc83a06e40d5218bf365d310eaaafacbfd8cd763d1da9d4f"
 
       def install
         bin.install "arterm-macos-aarch64" => "arterm"
@@ -15,8 +15,8 @@ class Arterm < Formula
     end
 
     on_intel do
-      url "https://github.com/Arclude/Arterm-CLI/releases/download/v0.10.7/arterm-macos-x86_64.tar.gz"
-      sha256 "f0b3c7f44385a9d3d352e60814923ea859fb4c82bf831df619c836fa179eb0e0"
+      url "https://github.com/Arclude/Arterm-CLI/releases/download/v0.10.8/arterm-macos-x86_64.tar.gz"
+      sha256 "8b7feb6780443846792ae589298abb0c6fa52500055548ccd2a9c7ea87f1c000"
 
       def install
         bin.install "arterm-macos-x86_64" => "arterm"
@@ -26,8 +26,8 @@ class Arterm < Formula
 
   on_linux do
     on_intel do
-      url "https://github.com/Arclude/Arterm-CLI/releases/download/v0.10.7/arterm-linux-x86_64.tar.gz"
-      sha256 "1f86683119c21eafefa78840a97fc4d1fe05a814a26cd88b9d08c4a9f6eb6122"
+      url "https://github.com/Arclude/Arterm-CLI/releases/download/v0.10.8/arterm-linux-x86_64.tar.gz"
+      sha256 "d274a7729b964e6a78b4c83528a0bce40746c65be80a327208e8c3b999455753"
 
       def install
         libexec.install "arterm-linux-x86_64", "arterm-linux-x86_64.bin"
@@ -40,8 +40,8 @@ exec "#{libexec}/arterm-linux-x86_64" "$@"
     end
 
     on_arm do
-      url "https://github.com/Arclude/Arterm-CLI/releases/download/v0.10.7/arterm-linux-aarch64.tar.gz"
-      sha256 "2c3cf70718f4718c5e6065afb2af7f7ddefefa1b152fdd70348604e69c39fd40"
+      url "https://github.com/Arclude/Arterm-CLI/releases/download/v0.10.8/arterm-linux-aarch64.tar.gz"
+      sha256 "465d8f98429643cae9ac6a3717dbb4c1ebd25e8b01bbb2d2cbf76ae299a7a234"
 
       def install
         bin.install "arterm-linux-aarch64" => "arterm"
